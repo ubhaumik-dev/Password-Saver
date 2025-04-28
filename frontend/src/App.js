@@ -7,13 +7,14 @@ import SettingsPage from './pages/SettingsPage';
 import AddNewPassword from './pages/AddNewPassword';
 import EnterEmail from './pages/EnterEmail';
 import ResetPassword from './pages/ResetPassword';
-
+import LandingPage from './pages/LandingPage';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/settings" element={<SettingsPage />} />

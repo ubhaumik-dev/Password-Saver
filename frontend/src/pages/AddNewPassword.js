@@ -38,7 +38,7 @@ const AddNewPassword = () => {
       );
 
       alert('Password saved!');
-      navigate('/', { state: { refresh: true } });
+      navigate('/home', { state: { refresh: true } });
  // redirect to home/dashboard
     } catch (err) {
       console.error(err);

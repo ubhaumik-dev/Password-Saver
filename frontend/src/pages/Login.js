@@ -15,7 +15,7 @@ const Login = () => {
       });
   
       localStorage.setItem('token', response.data.token); // 🔐 Save token
-      navigate('/'); // or navigate('/home') if that's your route
+      navigate('/home'); // or navigate('/home') if that's your route
     } catch (error) {
       console.error('Login failed', error);
       alert('Invalid credentials');

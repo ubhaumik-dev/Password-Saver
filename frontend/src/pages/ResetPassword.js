@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const ResetPassword = () => {
   const [password, setPassword] = useState('');
@@ -8,7 +8,7 @@ const ResetPassword = () => {
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const { resetToken } = useParams(); // Get the reset token from URL params
-
+  const Navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
@@ -22,6 +22,7 @@ const ResetPassword = () => {
     } catch (err) {
       setError('Failed to reset password. Please try again.', err);
     }
+    Navigate("/login")
   };
 
   return (
