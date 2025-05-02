@@ -44,7 +44,7 @@ const Settings = () => {
   return (
     <div className="flex h-screen bg-gray-100">
       <aside className="w-64 bg-white shadow">
-        <h2 className="text-xl font-bold p-6">🔒 PassVault</h2>
+        <h2 className="text-xl font-bold p-6">🔒Password Saver</h2>
         <ul>
           <li className="px-6 py-3 hover:bg-gray-100" onClick={() => navigate('/')}>Dashboard</li>
           <li className="px-6 py-3 hover:bg-gray-100">Add New</li>

@@ -8,7 +8,7 @@ const LandingPage = () => {
     <div className="flex flex-col min-h-screen bg-gradient-to-r from-blue-100 to-blue-300">
       {/* Navbar */}
       <nav className="flex justify-between items-center p-6 bg-white shadow-md">
-        <h1 className="text-2xl font-bold text-blue-700">🔒 PassVault</h1>
+        <h1 className="text-2xl font-bold text-blue-700">🔒 Password Saver</h1>
         <div className="space-x-4">
           <button
             onClick={() => navigate('/login')}
@@ -28,7 +28,7 @@ const LandingPage = () => {
       {/* Main Content */}
       <main className="flex-grow flex flex-col justify-center items-center text-center p-8">
         <h2 className="text-4xl font-bold text-blue-800 mb-4">
-          Welcome to PassVault
+          Welcome to Password Saver
         </h2>
         <p className="text-lg text-blue-700 mb-8">
           Your trusted companion to safely store and manage your passwords.
